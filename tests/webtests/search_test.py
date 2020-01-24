@@ -10,7 +10,7 @@ import os
 import time
 
 @pytest.mark.usefixtures("setUp")
-class LoginTests(unittest.TestCase):
+class SearchTests(unittest.TestCase):
     log = cl.customLogger(logging.DEBUG)
     testName = ""
 
@@ -24,7 +24,6 @@ class LoginTests(unittest.TestCase):
 
     def get_excel_data(self, testName):
         datafile = os.path.join('testdata/TestData.xlsx')
-        self.log.info(datafile)
         data = self.excel.get_input_rows(datafile, testName)
         return data
 
