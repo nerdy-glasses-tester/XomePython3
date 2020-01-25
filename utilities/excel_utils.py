@@ -1,4 +1,5 @@
-from openpyxl import load_workbook
+
+import openpyxl
 import utilities.custom_logger as cl
 import logging
 
@@ -11,7 +12,7 @@ class ExcelUtils():
 
     def get_input_rows(self, datafile, testName):
 
-        wb = load_workbook(filename=datafile)
+        wb = openpyxl.load_workbook(filename=datafile)
 
         sheet = wb.active
         self.log.info(sheet)

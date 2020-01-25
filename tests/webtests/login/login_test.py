@@ -22,7 +22,6 @@ class LoginTests(unittest.TestCase):
 
     def get_excel_data(self, testName):
         datafile = os.path.join('testdata/TestData.xlsx')
-        self.log.info(datafile)
         data = self.excel.get_input_rows(datafile, testName)
         return data
 

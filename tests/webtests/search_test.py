@@ -27,7 +27,6 @@ class SearchTests(unittest.TestCase):
         data = self.excel.get_input_rows(datafile, testName)
         return data
 
-    @pytest.mark.run(order=1)
     def test_loginSearch(self):
         self.log.info("++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++")
         testName = self._testMethodName

@@ -241,7 +241,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>htmlreport.html</h1>
-    <p>Report generated on 23-Jan-2020 at 14:05:39 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 25-Jan-2020 at 10:18:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -260,8 +260,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.8.0</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 27.13 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>6 tests ran in 51.26 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -275,17 +275,115 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">tests/webtests/search_test.py::LoginTests::test_loginSearch</td>
-          <td class="col-duration">14.80</td>
+          <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_invalidLoginBlank</td>
+          <td class="col-duration">2.81</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m WebDriverFactory:webdriverFactory.py:67 Running Chrome Tests<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:search_test.py:33 ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
-[32mINFO    [0m LoginTests:search_test.py:35 test_loginSearch
-[32mINFO    [0m LoginTests:search_test.py:27 testdata/TestData.xlsx
-[32mINFO    [0m ExcelUtils:excel_utils.py:17 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
-[32mINFO    [0m ExcelUtils:excel_utils.py:20 Got active sheet.
-[32mINFO    [0m ExcelUtils:excel_utils.py:21 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m WebDriverFactory:webdriverFactory.py:67 Running Chrome Tests<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:30 ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+[32mINFO    [0m LoginPage:login_page.py:38 Click SignIn Link
+[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:89 Just completed the blankLogin method
+[32mINFO    [0m LoginPage:login_page.py:118 TEST PASS: Verified signin header is still present for blank login.
+[32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can&#x27;t Login with Blank Fields
+[32mINFO    [0m TestStatus:teststatus.py:67 test_invalidLoginBlank ### TEST SUCCESSFUL
+[32mINFO    [0m LoginTests:login_test.py:35 ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_invalidLoginWrongPassword</td>
+          <td class="col-duration">1.32</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:39 ++++++++++++++++++++++++++++++++++++STARTING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+[32mINFO    [0m LoginTests:login_test.py:42 test_invalidLoginWrongPassword
+[32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
+[32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
+[32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_invalidLoginWrongPassword&quot;&gt;
+[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:95 Just completed the wrongLogin method
+[32mINFO    [0m LoginPage:login_page.py:98 browser: chrome
+[32mINFO    [0m LoginPage:login_page.py:105 Error text found on page is: This combination of email or password is invalid.
+[32mINFO    [0m LoginPage:login_page.py:107 TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn&#x27;t match.
+[32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can&#x27;t Login with Wrong Password
+[32mINFO    [0m TestStatus:teststatus.py:67 test_validLoginWrongPassword ### TEST SUCCESSFUL
+[32mINFO    [0m LoginTests:login_test.py:50 ++++++++++++++++++++++++++++++++++++ENDING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_invalidLoginWrongEmail</td>
+          <td class="col-duration">1.62</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:55 ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+[32mINFO    [0m LoginTests:login_test.py:57 test_invalidLoginWrongEmail
+[32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
+[32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
+[32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_invalidLoginWrongEmail&quot;&gt;
+[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:95 Just completed the wrongLogin method
+[32mINFO    [0m LoginPage:login_page.py:98 browser: chrome
+[32mINFO    [0m LoginPage:login_page.py:105 Error text found on page is: This combination of email or password is invalid.
+[32mINFO    [0m LoginPage:login_page.py:107 TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn&#x27;t match.
+[32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can&#x27;t Login with Wrong Email
+[32mINFO    [0m TestStatus:teststatus.py:67 test_invalidLoginWrongEmail ### TEST SUCCESSFUL
+[32mINFO    [0m LoginTests:login_test.py:65 ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_validLogin</td>
+          <td class="col-duration">3.87</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:69 ++++++++++++++++++++++++++++++++++++STARTING test_validLogin++++++++++++++++++++++++++++++++++++
+[32mINFO    [0m LoginTests:login_test.py:71 test_validLogin
+[32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
+[32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
+[32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_validLogin&quot;&gt;
+[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:84 Just completed the login method
+[32mINFO    [0m LoginPage:login_page.py:130 Element was found. Now getting its text.
+[32mINFO    [0m LoginPage:login_page.py:132 Username is AUTOMATION TESTER
+[32mINFO    [0m LoginPage:login_page.py:133 ***VERIFIED SUCCESSFUL LOGIN.***
+[32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can Login Successfully
+[32mINFO    [0m TestStatus:teststatus.py:67 test_validLogin ### TEST SUCCESSFUL
+[32mINFO    [0m LoginTests:login_test.py:80 ++++++++++++++++++++++++++++++++++++ENDING test_validLogin++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_validLogout</td>
+          <td class="col-duration">4.17</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:84 ++++++++++++++++++++++++++++++++++++STARTING test_validLogout++++++++++++++++++++++++++++++++++++
+[32mINFO    [0m LoginPage:login_page.py:148 Just completed the logout method
+[32mINFO    [0m LoginPage:login_page.py:156 ***SUCCESSFULLY LOGGED OUT.***
+[32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can Logout Successfully
+[32mINFO    [0m TestStatus:teststatus.py:67 test_validLogout ### TEST SUCCESSFUL
+[32mINFO    [0m LoginTests:login_test.py:88 ++++++++++++++++++++++++++++++++++++ENDING test_validLogout++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_suite_web_sanity.py::SearchTests::test_loginSearch</td>
+          <td class="col-duration">19.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m WebDriverFactory:webdriverFactory.py:67 Running Chrome Tests<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m SearchTests:search_test.py:31 ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+[32mINFO    [0m SearchTests:search_test.py:33 test_loginSearch
+[32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
+[32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
+[32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
 [32mINFO    [0m LoginPage:login_page.py:38 Click SignIn Link
 [32mINFO    [0m LoginPage:login_page.py:46 Enter Email
 [32mINFO    [0m LoginPage:login_page.py:54 Enter Password
@@ -297,4 +395,4 @@ function filter_table(elem) {
 [32mINFO    [0m SearchPage:search_page.py:27 Enter search keyword
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify can search after login.
 [32mINFO    [0m TestStatus:teststatus.py:67 test_loginSearch ### TEST SUCCESSFUL
-[32mINFO    [0m LoginTests:search_test.py:51 ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody></table></body></html>
+[32mINFO    [0m SearchTests:search_test.py:49 ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody></table></body></html>
