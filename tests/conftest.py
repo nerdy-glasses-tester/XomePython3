@@ -1,6 +1,6 @@
 import pytest
 from base.webdriverFactory import WebDriverFactory
-from pages.webpages.login.login_page import LoginPage
+from pages.webpages.login_page import LoginPage
 
 @pytest.fixture(scope="class")
 def setUp(request, browser, os):

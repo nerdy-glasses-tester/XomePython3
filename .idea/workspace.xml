@@ -54,15 +54,16 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$/tests/webtests" />
-      <recent name="$PROJECT_DIR$/base" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/tests/mobiletests/login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/mobilepages" />
+      <recent name="$PROJECT_DIR$/pages/webpages" />
+      <recent name="$PROJECT_DIR$/tests/mobiletests" />
+      <recent name="$PROJECT_DIR$/tests/webtests" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -77,15 +78,6 @@
       <updated>1559078848639</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView" selected-index="1">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

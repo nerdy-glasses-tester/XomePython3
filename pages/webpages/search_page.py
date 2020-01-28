@@ -32,7 +32,12 @@ class SearchPage(BasePage):
         wait.until(EC.presence_of_all_elements_located(SearchPage._searchresultsaddresses))
         searchresults = self.driver.find_elements(*SearchPage._searchresultsaddresses)
         size = len(searchresults)
-        return size
+        if size > 0:
+            return True
+        else:
+            return False
+
+
 
 
 

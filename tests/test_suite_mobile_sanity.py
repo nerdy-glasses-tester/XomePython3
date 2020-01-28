@@ -1,5 +1,5 @@
 import unittest
-from tests.mobiletests.login.m_login_test import MLoginTests
+from tests.mobiletests.m_login_test import MLoginTests
 
 # Get all tests from the test classes
 tc1 = unittest.TestLoader().loadTestsFromTestCase(MLoginTests)

@@ -1,5 +1,5 @@
 from base.webdriverFactory import WebDriverFactory
-from pages.webpages.login.login_page import LoginPage
+from pages.webpages.login_page import LoginPage
 from utilities.teststatus import TestStatus
 from utilities.excel_utils import ExcelUtils
 import unittest, pytest

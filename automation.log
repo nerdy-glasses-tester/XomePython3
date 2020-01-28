@@ -86,3 +86,428 @@
 01/25/2020 10:18:19 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can search after login.
 01/25/2020 10:18:19 AM - TestStatus - INFO: test_loginSearch ### TEST SUCCESSFUL
 01/25/2020 10:18:19 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - LoginTests - INFO: test_invalidLoginWrongEmail
+01/25/2020 10:28:33 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - LoginTests - INFO: test_invalidLoginWrongPassword
+01/25/2020 10:28:33 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - LoginTests - INFO: test_validLogin
+01/25/2020 10:28:33 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogout++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:33 AM - SearchTests - INFO: test_loginSearch
+01/25/2020 10:28:35 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/25/2020 10:28:41 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:43 AM - LoginPage - INFO: Click SignIn Link
+01/25/2020 10:28:43 AM - LoginPage - INFO: Click Login Button
+01/25/2020 10:28:43 AM - LoginPage - INFO: Just completed the blankLogin method
+01/25/2020 10:28:43 AM - LoginPage - INFO: TEST PASS: Verified signin header is still present for blank login.
+01/25/2020 10:28:43 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Blank Fields
+01/25/2020 10:28:43 AM - TestStatus - INFO: test_invalidLoginBlank ### TEST SUCCESSFUL
+01/25/2020 10:28:43 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:43 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:43 AM - LoginTests - INFO: test_invalidLoginWrongPassword
+01/25/2020 10:28:43 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/25/2020 10:28:43 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:28:43 AM - ExcelUtils - INFO: <Worksheet "test_invalidLoginWrongPassword">
+01/25/2020 10:28:43 AM - LoginPage - INFO: Enter Email
+01/25/2020 10:28:43 AM - LoginPage - INFO: Enter Password
+01/25/2020 10:28:44 AM - LoginPage - INFO: Click Login Button
+01/25/2020 10:28:44 AM - LoginPage - INFO: Just completed the wrongLogin method
+01/25/2020 10:28:44 AM - LoginPage - INFO: browser: chrome
+01/25/2020 10:28:44 AM - LoginPage - INFO: Error text found on page is: This combination of email or password is invalid.
+01/25/2020 10:28:44 AM - LoginPage - INFO: TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn't match.
+01/25/2020 10:28:44 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Wrong Password
+01/25/2020 10:28:44 AM - TestStatus - INFO: test_validLoginWrongPassword ### TEST SUCCESSFUL
+01/25/2020 10:28:44 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:44 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:44 AM - LoginTests - INFO: test_invalidLoginWrongEmail
+01/25/2020 10:28:44 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/25/2020 10:28:44 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:28:44 AM - ExcelUtils - INFO: <Worksheet "test_invalidLoginWrongEmail">
+01/25/2020 10:28:45 AM - LoginPage - INFO: Enter Email
+01/25/2020 10:28:45 AM - LoginPage - INFO: Enter Password
+01/25/2020 10:28:46 AM - LoginPage - INFO: Click Login Button
+01/25/2020 10:28:46 AM - LoginPage - INFO: Just completed the wrongLogin method
+01/25/2020 10:28:46 AM - LoginPage - INFO: browser: chrome
+01/25/2020 10:28:46 AM - LoginPage - INFO: Error text found on page is: This combination of email or password is invalid.
+01/25/2020 10:28:46 AM - LoginPage - INFO: TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn't match.
+01/25/2020 10:28:46 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Wrong Email
+01/25/2020 10:28:46 AM - TestStatus - INFO: test_invalidLoginWrongEmail ### TEST SUCCESSFUL
+01/25/2020 10:28:46 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:46 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:46 AM - LoginTests - INFO: test_validLogin
+01/25/2020 10:28:46 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/25/2020 10:28:46 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:28:46 AM - ExcelUtils - INFO: <Worksheet "test_validLogin">
+01/25/2020 10:28:46 AM - LoginPage - INFO: Enter Email
+01/25/2020 10:28:46 AM - LoginPage - INFO: Enter Password
+01/25/2020 10:28:47 AM - LoginPage - INFO: Click Login Button
+01/25/2020 10:28:47 AM - LoginPage - INFO: Just completed the login method
+01/25/2020 10:28:50 AM - LoginPage - INFO: Element was found. Now getting its text.
+01/25/2020 10:28:50 AM - LoginPage - INFO: Username is AUTOMATION TESTER
+01/25/2020 10:28:50 AM - LoginPage - INFO: ***VERIFIED SUCCESSFUL LOGIN.***
+01/25/2020 10:28:50 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can Login Successfully
+01/25/2020 10:28:50 AM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+01/25/2020 10:28:50 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_validLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:50 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogout++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:51 AM - LoginPage - INFO: Just completed the logout method
+01/25/2020 10:28:54 AM - LoginPage - INFO: ***SUCCESSFULLY LOGGED OUT.***
+01/25/2020 10:28:54 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can Logout Successfully
+01/25/2020 10:28:54 AM - TestStatus - INFO: test_validLogout ### TEST SUCCESSFUL
+01/25/2020 10:28:54 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_validLogout++++++++++++++++++++++++++++++++++++
+01/25/2020 10:28:56 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/25/2020 10:29:03 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/25/2020 10:29:03 AM - SearchTests - INFO: test_loginSearch
+01/25/2020 10:29:04 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/25/2020 10:29:04 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:29:04 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/25/2020 10:29:05 AM - LoginPage - INFO: Click SignIn Link
+01/25/2020 10:29:05 AM - LoginPage - INFO: Enter Email
+01/25/2020 10:29:05 AM - LoginPage - INFO: Enter Password
+01/25/2020 10:29:06 AM - LoginPage - INFO: Click Login Button
+01/25/2020 10:29:06 AM - LoginPage - INFO: Just completed the login method
+01/25/2020 10:29:09 AM - LoginPage - INFO: Element was found. Now getting its text.
+01/25/2020 10:29:09 AM - LoginPage - INFO: Username is AUTOMATION TESTER
+01/25/2020 10:29:09 AM - LoginPage - INFO: ***VERIFIED SUCCESSFUL LOGIN.***
+01/25/2020 10:29:14 AM - SearchPage - INFO: Enter search keyword
+01/25/2020 10:29:19 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can search after login.
+01/25/2020 10:29:19 AM - TestStatus - INFO: test_loginSearch ### TEST SUCCESSFUL
+01/25/2020 10:29:19 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/25/2020 10:32:47 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_minvalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:32:47 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_minvalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:32:47 AM - MLoginTests - INFO: test_minvalidLoginWrongEmail
+01/25/2020 10:32:47 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:32:47 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:32:47 AM - MLoginTests - INFO: test_minvalidLoginWrongPassword
+01/25/2020 10:32:47 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:32:47 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:32:47 AM - MLoginTests - INFO: test_mvalidLogin
+01/25/2020 10:32:47 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:32:47 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLogout++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:16 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_minvalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:16 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_minvalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:16 AM - MLoginTests - INFO: test_minvalidLoginWrongEmail
+01/25/2020 10:33:16 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:33:16 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:16 AM - MLoginTests - INFO: test_minvalidLoginWrongPassword
+01/25/2020 10:33:16 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:33:16 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:16 AM - MLoginTests - INFO: test_mvalidLogin
+01/25/2020 10:33:16 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:33:16 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLogout++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:40 AM - WebDriverFactory - INFO: Running Android Tests
+01/25/2020 10:33:40 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_minvalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:42 AM - MLoginPage - INFO: Click hamburger menu
+01/25/2020 10:33:50 AM - MLoginPage - INFO: Click sign in
+01/25/2020 10:33:50 AM - MLoginPage - INFO: Click login button
+01/25/2020 10:33:50 AM - MLoginPage - INFO: Just completed the blankLogin method
+01/25/2020 10:33:51 AM - MLoginPage - INFO: errormsg is: Error Message
+email is required
+01/25/2020 10:33:53 AM - MLoginPage - INFO: TEST PASS: Verified email is required error.
+01/25/2020 10:33:53 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Blank Fields
+01/25/2020 10:33:53 AM - TestStatus - INFO: test_minvalidLoginBlank ### TEST SUCCESSFUL
+01/25/2020 10:33:53 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_minvalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:53 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:33:53 AM - MLoginTests - INFO: test_minvalidLoginWrongPassword
+01/25/2020 10:33:53 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:33:53 AM - ExcelUtils - INFO: <Worksheet "test_mvalidLogout">
+01/25/2020 10:33:53 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:33:53 AM - ExcelUtils - INFO: <Worksheet "test_minvalidLoginWrongPassword">
+01/25/2020 10:33:54 AM - MLoginPage - INFO: Clear fields
+01/25/2020 10:33:54 AM - MLoginPage - INFO: Enter email
+01/25/2020 10:33:55 AM - MLoginPage - INFO: Enter password
+01/25/2020 10:33:55 AM - MLoginPage - INFO: Click login button
+01/25/2020 10:33:55 AM - MLoginPage - INFO: Just completed the wrongLogin method
+01/25/2020 10:33:59 AM - MLoginPage - INFO: errormsg is: Error Message
+Sign In Failed
+01/25/2020 10:34:02 AM - MLoginPage - INFO: TEST PASS: Verified invalid credentials provided error.
+01/25/2020 10:34:02 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Wrong Password
+01/25/2020 10:34:02 AM - TestStatus - INFO: test_mvalidLoginWrongPassword ### TEST SUCCESSFUL
+01/25/2020 10:34:02 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_mvalidLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/25/2020 10:34:02 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_minvalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:34:02 AM - MLoginTests - INFO: test_minvalidLoginWrongEmail
+01/25/2020 10:34:02 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:34:02 AM - ExcelUtils - INFO: <Worksheet "test_mvalidLogout">
+01/25/2020 10:34:02 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:34:02 AM - ExcelUtils - INFO: <Worksheet "test_minvalidLoginWrongEmail">
+01/25/2020 10:34:03 AM - MLoginPage - INFO: Clear fields
+01/25/2020 10:34:03 AM - MLoginPage - INFO: Enter email
+01/25/2020 10:34:04 AM - MLoginPage - INFO: Enter password
+01/25/2020 10:34:05 AM - MLoginPage - INFO: Click login button
+01/25/2020 10:34:05 AM - MLoginPage - INFO: Just completed the wrongLogin method
+01/25/2020 10:34:08 AM - MLoginPage - INFO: errormsg is: Error Message
+Sign In Failed
+01/25/2020 10:34:11 AM - MLoginPage - INFO: TEST PASS: Verified invalid credentials provided error.
+01/25/2020 10:34:11 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Wrong Email
+01/25/2020 10:34:11 AM - TestStatus - INFO: test_minvalidLoginWrongEmail ### TEST SUCCESSFUL
+01/25/2020 10:34:11 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_minvalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/25/2020 10:34:11 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:34:11 AM - MLoginTests - INFO: test_mvalidLogin
+01/25/2020 10:34:11 AM - MLoginTests - INFO: testdata/MobileTestData.xlsx
+01/25/2020 10:34:11 AM - ExcelUtils - INFO: <Worksheet "test_mvalidLogout">
+01/25/2020 10:34:11 AM - ExcelUtils - INFO: Got active sheet.
+01/25/2020 10:34:11 AM - ExcelUtils - INFO: <Worksheet "test_mvalidLogin">
+01/25/2020 10:34:12 AM - MLoginPage - INFO: Clear fields
+01/25/2020 10:34:12 AM - MLoginPage - INFO: Enter email
+01/25/2020 10:34:13 AM - MLoginPage - INFO: Enter password
+01/25/2020 10:34:13 AM - MLoginPage - INFO: Click login button
+01/25/2020 10:34:16 AM - MLoginPage - INFO: Completed Login
+01/25/2020 10:34:17 AM - MLoginPage - INFO: Click hamburger menu
+01/25/2020 10:34:22 AM - MLoginPage - INFO: Found welcomeusertext element.
+01/25/2020 10:34:22 AM - MLoginPage - INFO: Welcome user text is: Welcome Automation
+01/25/2020 10:34:22 AM - MLoginPage - INFO: ***VERIFIED SUCCESSFUL LOGIN.***
+01/25/2020 10:34:23 AM - MLoginPage - INFO: Dismiss menu by clicking on search box
+01/25/2020 10:34:23 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can Login Successfully
+01/25/2020 10:34:23 AM - TestStatus - INFO: test_mvalidLogin ### TEST SUCCESSFUL
+01/25/2020 10:34:23 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_mvalidLogin++++++++++++++++++++++++++++++++++++
+01/25/2020 10:34:23 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_mvalidLogout++++++++++++++++++++++++++++++++++++
+01/25/2020 10:34:24 AM - MLoginPage - INFO: Click hamburger menu
+01/25/2020 10:34:29 AM - MLoginPage - INFO: Open MyXome header
+01/25/2020 10:34:34 AM - MLoginPage - INFO: Click hamburger menu
+01/25/2020 10:34:35 AM - MLoginPage - INFO: Found signin element after signed out.
+01/25/2020 10:34:35 AM - MLoginPage - INFO: ***SUCCESSFULLY LOGGED OUT.***
+01/25/2020 10:34:35 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can Logout Successfully
+01/25/2020 10:34:35 AM - TestStatus - INFO: test_mvalidLogout ### TEST SUCCESSFUL
+01/25/2020 10:34:35 AM - MLoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_mvalidLogout++++++++++++++++++++++++++++++++++++
+01/28/2020 09:27:27 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 09:27:35 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 09:27:35 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 09:27:35 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/28/2020 09:30:26 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 09:30:33 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 09:30:33 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 09:30:33 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 09:30:33 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 09:30:33 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 09:30:33 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 09:39:23 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 09:39:32 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 09:39:32 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 09:39:32 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 09:39:32 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 09:39:32 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 09:39:32 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 09:46:04 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 09:46:11 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 09:46:11 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 09:46:11 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 09:46:11 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 09:46:11 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 09:46:11 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:11:17 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:11:24 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:11:24 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:11:24 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:11:24 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:11:24 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:11:25 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:13:05 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:13:13 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:13:13 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:13:13 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:13:13 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:13:13 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:13:13 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:14:19 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:14:26 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:14:26 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:14:26 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:14:26 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:14:26 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:14:26 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:16:15 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:16:22 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:16:22 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:16:22 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:16:22 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:16:22 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:16:22 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:18:12 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:18:18 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:18:18 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:18:18 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:18:18 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:18:18 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:18:18 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:19:17 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:19:24 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:19:24 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:19:24 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:19:24 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:19:24 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:19:24 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:23:10 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:23:17 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:23:17 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:23:17 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:23:17 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:23:17 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:23:17 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:25:13 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:25:22 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:25:22 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:25:22 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:25:22 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:25:22 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:25:22 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:28:28 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:28:35 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:28:35 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:28:35 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:28:35 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:28:35 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:28:35 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:30:49 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:30:57 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:30:57 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:30:57 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:30:57 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:30:57 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:30:57 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:33:07 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:33:14 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:33:14 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:33:14 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:33:14 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:33:14 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:33:14 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:34:43 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:34:50 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:34:50 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:34:50 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:34:50 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:34:50 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:34:50 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:47:51 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:47:58 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:47:58 AM - SearchTests - INFO: test_loginSearch
+01/28/2020 10:47:58 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:47:58 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:47:58 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/28/2020 10:48:00 AM - LoginPage - INFO: Click SignIn Link
+01/28/2020 10:48:00 AM - LoginPage - INFO: Enter Email
+01/28/2020 10:48:00 AM - LoginPage - INFO: Enter Password
+01/28/2020 10:48:01 AM - LoginPage - INFO: Click Login Button
+01/28/2020 10:48:01 AM - LoginPage - INFO: Just completed the login method
+01/28/2020 10:48:09 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:48:13 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can search after login.
+01/28/2020 10:48:13 AM - TestStatus - INFO: test_loginSearch ### TEST SUCCESSFUL
+01/28/2020 10:48:13 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:58:51 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 10:59:00 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:59:00 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 10:59:00 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:59:00 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 10:59:00 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 10:59:00 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 10:59:22 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can filter by sq feet.
+01/28/2020 10:59:22 AM - TestStatus - INFO: test_filterResultsBySqFeet ### TEST SUCCESSFUL
+01/28/2020 10:59:22 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 10:59:52 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 11:00:00 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:00:00 AM - SearchTests - INFO: test_filterResultsBySqFeet
+01/28/2020 11:00:00 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:00:00 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 11:00:00 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:00:00 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 11:00:14 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can filter by sq feet.
+01/28/2020 11:00:14 AM - TestStatus - INFO: test_filterResultsBySqFeet ### TEST SUCCESSFUL
+01/28/2020 11:00:14 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - LoginTests - INFO: test_invalidLoginWrongEmail
+01/28/2020 11:04:27 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - LoginTests - INFO: test_invalidLoginWrongPassword
+01/28/2020 11:04:27 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogin++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - LoginTests - INFO: test_validLogin
+01/28/2020 11:04:27 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogout++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - SearchTests - INFO: test_loginSearch
+01/28/2020 11:04:27 AM - FilterResultsBySqFeetTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:27 AM - FilterResultsBySqFeetTests - INFO: test_filterResultsBySqFeet
+01/28/2020 11:04:29 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 11:04:36 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:38 AM - LoginPage - INFO: Click SignIn Link
+01/28/2020 11:04:38 AM - LoginPage - INFO: Click Login Button
+01/28/2020 11:04:38 AM - LoginPage - INFO: Just completed the blankLogin method
+01/28/2020 11:04:38 AM - LoginPage - INFO: TEST PASS: Verified signin header is still present for blank login.
+01/28/2020 11:04:38 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Blank Fields
+01/28/2020 11:04:38 AM - TestStatus - INFO: test_invalidLoginBlank ### TEST SUCCESSFUL
+01/28/2020 11:04:38 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:38 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:38 AM - LoginTests - INFO: test_invalidLoginWrongPassword
+01/28/2020 11:04:38 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:04:38 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 11:04:38 AM - ExcelUtils - INFO: <Worksheet "test_invalidLoginWrongPassword">
+01/28/2020 11:04:38 AM - LoginPage - INFO: Enter Email
+01/28/2020 11:04:38 AM - LoginPage - INFO: Enter Password
+01/28/2020 11:04:39 AM - LoginPage - INFO: Click Login Button
+01/28/2020 11:04:39 AM - LoginPage - INFO: Just completed the wrongLogin method
+01/28/2020 11:04:39 AM - LoginPage - INFO: browser: chrome
+01/28/2020 11:04:39 AM - LoginPage - INFO: Error text found on page is: This combination of email or password is invalid.
+01/28/2020 11:04:39 AM - LoginPage - INFO: TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn't match.
+01/28/2020 11:04:39 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Wrong Password
+01/28/2020 11:04:39 AM - TestStatus - INFO: test_validLoginWrongPassword ### TEST SUCCESSFUL
+01/28/2020 11:04:39 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:39 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:39 AM - LoginTests - INFO: test_invalidLoginWrongEmail
+01/28/2020 11:04:40 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:04:40 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 11:04:40 AM - ExcelUtils - INFO: <Worksheet "test_invalidLoginWrongEmail">
+01/28/2020 11:04:40 AM - LoginPage - INFO: Enter Email
+01/28/2020 11:04:40 AM - LoginPage - INFO: Enter Password
+01/28/2020 11:04:41 AM - LoginPage - INFO: Click Login Button
+01/28/2020 11:04:41 AM - LoginPage - INFO: Just completed the wrongLogin method
+01/28/2020 11:04:41 AM - LoginPage - INFO: browser: chrome
+01/28/2020 11:04:41 AM - LoginPage - INFO: Error text found on page is: This combination of email or password is invalid.
+01/28/2020 11:04:41 AM - LoginPage - INFO: TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn't match.
+01/28/2020 11:04:41 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can't Login with Wrong Email
+01/28/2020 11:04:41 AM - TestStatus - INFO: test_invalidLoginWrongEmail ### TEST SUCCESSFUL
+01/28/2020 11:04:41 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:41 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogin++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:41 AM - LoginTests - INFO: test_validLogin
+01/28/2020 11:04:41 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:04:41 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 11:04:41 AM - ExcelUtils - INFO: <Worksheet "test_validLogin">
+01/28/2020 11:04:41 AM - LoginPage - INFO: Enter Email
+01/28/2020 11:04:42 AM - LoginPage - INFO: Enter Password
+01/28/2020 11:04:42 AM - LoginPage - INFO: Click Login Button
+01/28/2020 11:04:42 AM - LoginPage - INFO: Just completed the login method
+01/28/2020 11:04:45 AM - LoginPage - INFO: Element was found. Now getting its text.
+01/28/2020 11:04:45 AM - LoginPage - INFO: Username is AUTOMATION TESTER
+01/28/2020 11:04:45 AM - LoginPage - INFO: ***VERIFIED SUCCESSFUL LOGIN.***
+01/28/2020 11:04:45 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can Login Successfully
+01/28/2020 11:04:45 AM - TestStatus - INFO: test_validLogin ### TEST SUCCESSFUL
+01/28/2020 11:04:45 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_validLogin++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:45 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_validLogout++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:46 AM - LoginPage - INFO: Just completed the logout method
+01/28/2020 11:04:49 AM - LoginPage - INFO: ***SUCCESSFULLY LOGGED OUT.***
+01/28/2020 11:04:49 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify Can Logout Successfully
+01/28/2020 11:04:49 AM - TestStatus - INFO: test_validLogout ### TEST SUCCESSFUL
+01/28/2020 11:04:49 AM - LoginTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_validLogout++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:51 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 11:04:58 AM - FilterResultsBySqFeetTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:04:58 AM - FilterResultsBySqFeetTests - INFO: test_filterResultsBySqFeet
+01/28/2020 11:04:58 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:04:58 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 11:04:58 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:04:58 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 11:05:11 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can filter by sq feet.
+01/28/2020 11:05:11 AM - TestStatus - INFO: test_filterResultsBySqFeet ### TEST SUCCESSFUL
+01/28/2020 11:05:11 AM - FilterResultsBySqFeetTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:05:13 AM - WebDriverFactory - INFO: Running Chrome Tests
+01/28/2020 11:05:21 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++STARTING test_loginSearch++++++++++++++++++++++++++++++++++++
+01/28/2020 11:05:21 AM - SearchTests - INFO: test_loginSearch
+01/28/2020 11:05:21 AM - ExcelUtils - INFO: <Worksheet "test_filterResultsBySqFeet">
+01/28/2020 11:05:21 AM - ExcelUtils - INFO: Got active sheet.
+01/28/2020 11:05:21 AM - ExcelUtils - INFO: <Worksheet "test_loginSearch">
+01/28/2020 11:05:23 AM - LoginPage - INFO: Click SignIn Link
+01/28/2020 11:05:23 AM - LoginPage - INFO: Enter Email
+01/28/2020 11:05:23 AM - LoginPage - INFO: Enter Password
+01/28/2020 11:05:23 AM - LoginPage - INFO: Click Login Button
+01/28/2020 11:05:23 AM - LoginPage - INFO: Just completed the login method
+01/28/2020 11:05:32 AM - SearchPage - INFO: Enter search keyword
+01/28/2020 11:05:36 AM - TestStatus - INFO: ### VERIFICATION SUCCESSFUL :: + Verify can search after login.
+01/28/2020 11:05:36 AM - TestStatus - INFO: test_loginSearch ### TEST SUCCESSFUL
+01/28/2020 11:05:36 AM - SearchTests - INFO: ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++
