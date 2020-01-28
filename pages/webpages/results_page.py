@@ -15,6 +15,15 @@ class ResultsPage(BasePage):
 
     #Locators
     _sqftresults = (By.XPATH, ".//span[contains(text(), 'sq. ft')]/preceding-sibling::span")
+    _images = (By.XPATH, ".//a[@class='ldp-link']//img")
+
+
+    def click1stimage(self):
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait.until(EC.presence_of_all_elements_located(ResultsPage._images))
+        images = self.driver.find_elements(*ResultsPage._images)
+        image1 = images[0]
+        image1.click()
 
     def verifySqFt(self, minsqft, maxsqft):
         wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)

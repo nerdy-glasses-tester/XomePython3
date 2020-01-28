@@ -18,13 +18,43 @@ class MoreFiltersPage(BasePage):
     _morefilters = (By.CSS_SELECTOR, "div#ddbtn-label-filters>span.dd-info")
     _openminsqft = (By.CSS_SELECTOR, "button[data-id='filters-sqftmin']")
     _openmaxsqft = (By.CSS_SELECTOR, "button[data-id='filters-sqftmax']")
+    _openminyear = (By.CSS_SELECTOR, "button[data-id='filters-minyearbuilt']")
+    _openmaxyear = (By.CSS_SELECTOR, "button[data-id='filters-maxyearbuilt']")
     _applyfiltersbtn = (By.CSS_SELECTOR, "button#filters-submit>span#desktop-apply")
 
-    def filterBySqFt(self, minsqft, maxsqft):
+    def clickMoreFilters(self):
         wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
         wait.until(EC.element_to_be_clickable(MoreFiltersPage._morefilters))
         morefilters = self.driver.find_element(*MoreFiltersPage._morefilters)
         morefilters.click()
+
+    def filterByYear(self, minyear, maxyear):
+        MoreFiltersPage.clickMoreFilters(self)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait.until(EC.element_to_be_clickable(MoreFiltersPage._openminyear))
+        openminyear = self.driver.find_element(*MoreFiltersPage._openminyear)
+        openminyear.click()
+
+        minyearelement = self.driver.find_element(By.XPATH, ".//select[@id='filters-minyearbuilt']/option[@value='%s']"%minyear)
+        minyearelement.click()
+        time.sleep(2)
+
+        wait.until(EC.element_to_be_clickable(MoreFiltersPage._openmaxyear))
+        openmaxyear = self.driver.find_element(*MoreFiltersPage._openmaxyear)
+        openmaxyear.click()
+
+        maxyearelement = self.driver.find_element(By.XPATH, ".//select[@id='filters-maxyearbuilt']/option[@value='%s']"%maxyear)
+        maxyearelement.click()
+        time.sleep(2)
+
+        wait.until(EC.element_to_be_clickable(MoreFiltersPage._applyfiltersbtn))
+        applybtn = self.driver.find_element(*MoreFiltersPage._applyfiltersbtn)
+        applybtn.click()
+        time.sleep(2)
+
+    def filterBySqFt(self, minsqft, maxsqft):
+        MoreFiltersPage.clickMoreFilters(self)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
         wait.until(EC.element_to_be_clickable(MoreFiltersPage._openminsqft))
         openminsqft = self.driver.find_element(*MoreFiltersPage._openminsqft)
         openminsqft.click()
