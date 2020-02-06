@@ -70,14 +70,14 @@ class LoginPage(BasePage):
         passwordField.clear()
         self.log.info("Clear fields")
 
-    def firstlogin(self, email="", password="", name=""):
+    def firstlogin(self, email, password, name):
         self.clickSignInLink()
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickLoginButton()
         self.log.info("Just completed the first login")
 
-    def login(self, email="", password="", name=""):
+    def login(self, email, password, name):
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickLoginButton()
@@ -88,7 +88,7 @@ class LoginPage(BasePage):
         self.clickLoginButton()
         self.log.info("Just completed the blankLogin method")
 
-    def wrongLogin(self, email="", password=""):
+    def wrongLogin(self, email, password):
         self.enterEmail(email)
         self.enterPassword(password)
         self.clickLoginButton()
@@ -121,7 +121,7 @@ class LoginPage(BasePage):
             self.log.error("TEST FAIL: Did not find signin header. Can't confirm blank login did not allow you to login and still stay on signin screen.")
             return False
 
-    def verifyLoginSuccessful(self, name=""):
+    def verifyLoginSuccessful(self, name):
         self.driver.switch_to.default_content()
         wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
         wait.until(EC.presence_of_element_located(LoginPage._loggedin_username))
@@ -131,6 +131,7 @@ class LoginPage(BasePage):
             username = element.text
             self.log.info("Username is "+username)
             self.log.info("***VERIFIED SUCCESSFUL LOGIN.***")
+            print("Signed in Username: " + username.upper() +" Signed in Expected Username: "+name)
             return username.upper() == name
         else:
             self.log.error("***FAILED TO LOGIN. DID NOT FIND LOGGED IN USER.***")

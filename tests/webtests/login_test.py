@@ -87,4 +87,4 @@ class LoginTests(unittest.TestCase):
         self.ts.markFinal("test_validLogout", result, "Verify Can Logout Successfully")
         self.log.info("++++++++++++++++++++++++++++++++++++ENDING test_validLogout++++++++++++++++++++++++++++++++++++")
 
-#pytest -s -v tests/webtests/login/login_test.py --browser chrome --os none --html=htmlreport.html
+#pytest -s -v tests/webtests/login_test.py --browser chrome --os none --html=htmlreport.html

@@ -86,4 +86,4 @@ class MLoginTests(unittest.TestCase):
         self.log.info("++++++++++++++++++++++++++++++++++++ENDING test_mvalidLogout++++++++++++++++++++++++++++++++++++")
 
 
-#pytest -s -v tests/mobiletests/login/m_login_test.py --browser none --os android --html=htmlreport.html
+#pytest -s -v tests/mobiletests/m_login_test.py --browser none --os android --html=htmlreport.html
