@@ -2,7 +2,8 @@ import utilities.custom_logger as cl
 import logging
 from base.basepage import BasePage
 import time
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementNotVisibleException, \
+    ElementNotSelectableException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from appium.webdriver.common.mobileby import MobileBy
@@ -44,20 +45,32 @@ class MLoginPage(BasePage):
 
 
     def clickPermissionAtStartup(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._permission_at_startup))
         element=self.driver.find_element(*MLoginPage._permission_at_startup)
         element.click()
 
     def clickHamburgerMenu(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._hamburger_icon))
         element = self.driver.find_element(*MLoginPage._hamburger_icon)
         element.click()
         self.log.info("Click hamburger menu")
 
     def clickSignIn(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._sign_in))
         element = self.driver.find_element(*MLoginPage._sign_in)
         element.click()
@@ -65,28 +78,44 @@ class MLoginPage(BasePage):
         self.log.info("Click sign in")
 
     def enterEmail(self, email):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._email_field))
         element = self.driver.find_element(*MLoginPage._email_field)
         element.send_keys(email)
         self.log.info("Enter email")
 
     def enterPassword(self, password):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._password_field))
         element = self.driver.find_element(*MLoginPage._password_field)
         element.send_keys(password)
         self.log.info("Enter password")
 
     def clickLoginButton(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._login_btn))
         element = self.driver.find_element(*MLoginPage._login_btn)
         element.click()
         self.log.info("Click login button")
 
     def clearFields(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._email_field))
         emailField = self.driver.find_element(*MLoginPage._email_field)
         emailField.clear()
@@ -96,21 +125,33 @@ class MLoginPage(BasePage):
         self.log.info("Clear fields")
 
     def closeSignInfBox(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._closesigninbox))
         closesigninbox = self.driver.find_element(*MLoginPage._closesigninbox)
         closesigninbox.click()
         self.log.info("Closed signin box.")
 
     def dismissMenuByClickingSearchbox(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._searchbox))
         element = self.driver.find_element(*MLoginPage._searchbox)
         element.click()
         self.log.info("Dismiss menu by clicking on search box")
 
     def clickMyXomeHeader(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._myxomeheader))
         myxomeheader = self.driver.find_element(*MLoginPage._myxomeheader)
         myxomeheader.click()
@@ -151,7 +192,11 @@ class MLoginPage(BasePage):
     def verifyLoginSuccessful(self, name):
         self.clickHamburgerMenu()
         time.sleep(3)
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._welcomeusertext))
         element = self.driver.find_element(*MLoginPage._welcomeusertext)
         self.log.info("Found welcomeusertext element.")
@@ -194,7 +239,11 @@ class MLoginPage(BasePage):
     def logout(self):
         self.clickHamburgerMenu()
         self.clickMyXomeHeader()
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._myxomesignout))
         myxomesignout = self.driver.find_element(*MLoginPage._myxomesignout)
         myxomesignout.click()
@@ -206,7 +255,11 @@ class MLoginPage(BasePage):
 
     def verifyLogoutSuccessful(self):
         self.clickHamburgerMenu()
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MLoginPage._sign_in))
         element = self.driver.find_element(*MLoginPage._sign_in)
         self.log.info("Found signin element after signed out.")

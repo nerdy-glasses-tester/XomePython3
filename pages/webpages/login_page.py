@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
 from selenium.webdriver import ActionChains
 
 import utilities.custom_logger as cl
@@ -28,7 +29,11 @@ class LoginPage(BasePage):
     _sign_in_header = (By.XPATH, ".//h2[contains(text(), 'Sign In')]")
 
     def clickSignInLink(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(LoginPage._signin_link))
         element = self.driver.find_element(*LoginPage._signin_link)
         element.click()
@@ -38,7 +43,11 @@ class LoginPage(BasePage):
         self.log.info("Click SignIn Link")
 
     def enterEmail(self, email):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(LoginPage._email_field))
         element = self.driver.find_element(*LoginPage._email_field)
         element.click()
@@ -46,7 +55,11 @@ class LoginPage(BasePage):
         self.log.info("Enter Email")
 
     def enterPassword(self, password):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(LoginPage._password_field))
         element = self.driver.find_element(*LoginPage._password_field)
         element.click()
@@ -54,14 +67,22 @@ class LoginPage(BasePage):
         self.log.info("Enter Password")
 
     def clickLoginButton(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(LoginPage._login_btn))
         element = self.driver.find_element(*LoginPage._login_btn)
         element.click()
         self.log.info("Click Login Button")
 
     def clearFields(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(LoginPage._email_field))
         emailField = self.driver.find_element(*LoginPage._email_field)
         emailField.clear()
@@ -98,7 +119,11 @@ class LoginPage(BasePage):
         self.log.info("browser: "+testbrowser)
         if testbrowser =="safari":
             time.sleep(1)
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_element_located(LoginPage._wrong_pwd_email_error))
         element = self.driver.find_element(*LoginPage._wrong_pwd_email_error)
         error = element.get_attribute("innerText")
@@ -111,7 +136,11 @@ class LoginPage(BasePage):
             return False
 
     def verifyBlankLogin(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_element_located(LoginPage._sign_in_header))
         signin_header = self.driver.find_element(*LoginPage._sign_in_header)
         if signin_header is not None:
@@ -123,7 +152,11 @@ class LoginPage(BasePage):
 
     def verifyLoginSuccessful(self, name):
         self.driver.switch_to.default_content()
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_element_located(LoginPage._loggedin_username))
         element = self.driver.find_element(*LoginPage._loggedin_username)
         if element is not None:
@@ -138,7 +171,11 @@ class LoginPage(BasePage):
             return False
 
     def logout(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_element_located(LoginPage._loggedin_username))
         loginusername_element = self.driver.find_element(*LoginPage._loggedin_username)
         actions = ActionChains(self.driver)
@@ -150,7 +187,11 @@ class LoginPage(BasePage):
         time.sleep(3)
 
     def verifyLogoutSuccessful(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(LoginPage._signin_link))
         element = self.driver.find_element(*LoginPage._signin_link)
         if element is not None:

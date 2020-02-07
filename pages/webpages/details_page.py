@@ -1,3 +1,5 @@
+from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
+
 import utilities.custom_logger as cl
 import logging
 import time
@@ -17,7 +19,11 @@ class DetailsPage(BasePage):
     _yearbuilt = (By.CSS_SELECTOR, "div#mls-yr2>span")
 
     def verifyYear(self, minyear, maxyear):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_element_located(DetailsPage._yearbuilt))
         morefilters = self.driver.find_element(*DetailsPage._yearbuilt)
         year = int(morefilters.text)

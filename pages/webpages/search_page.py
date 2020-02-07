@@ -1,3 +1,5 @@
+from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
+
 import utilities.custom_logger as cl
 import logging
 import time
@@ -20,7 +22,11 @@ class SearchPage(BasePage):
 
     def search(self, searchkeyword):
 
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(SearchPage._searchfield))
         element = self.driver.find_element(*SearchPage._searchfield)
         element.send_keys(searchkeyword)

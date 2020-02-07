@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
 from selenium.webdriver.support.select import Select
 import utilities.custom_logger as cl
 import logging
@@ -23,14 +24,22 @@ class MoreFiltersPage(BasePage):
     _applyfiltersbtn = (By.CSS_SELECTOR, "button#filters-submit>span#desktop-apply")
 
     def clickMoreFilters(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MoreFiltersPage._morefilters))
         morefilters = self.driver.find_element(*MoreFiltersPage._morefilters)
         morefilters.click()
 
     def filterByYear(self, minyear, maxyear):
         MoreFiltersPage.clickMoreFilters(self)
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MoreFiltersPage._openminyear))
         openminyear = self.driver.find_element(*MoreFiltersPage._openminyear)
         openminyear.click()
@@ -54,7 +63,11 @@ class MoreFiltersPage(BasePage):
 
     def filterBySqFt(self, minsqft, maxsqft):
         MoreFiltersPage.clickMoreFilters(self)
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.element_to_be_clickable(MoreFiltersPage._openminsqft))
         openminsqft = self.driver.find_element(*MoreFiltersPage._openminsqft)
         openminsqft.click()

@@ -241,7 +241,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>htmlreport.html</h1>
-    <p>Report generated on 06-Feb-2020 at 09:36:47 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 07-Feb-2020 at 15:44:33 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -260,7 +260,7 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.8.0</td></tr></table>
     <h2>Summary</h2>
-    <p>8 tests ran in 99.09 seconds. </p>
+    <p>8 tests ran in 96.14 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -276,15 +276,15 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_invalidLoginBlank</td>
-          <td class="col-duration">2.38</td>
+          <td class="col-duration">2.06</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log setup------------------------------- <br/>[32mINFO    [0m WebDriverFactory:webdriverFactory.py:67 Running Chrome Tests<br/> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:30 ++++++++++++++++++++++++++++++++++++STARTING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++
-[32mINFO    [0m LoginPage:login_page.py:38 Click SignIn Link
-[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
-[32mINFO    [0m LoginPage:login_page.py:89 Just completed the blankLogin method
-[32mINFO    [0m LoginPage:login_page.py:118 TEST PASS: Verified signin header is still present for blank login.
+[32mINFO    [0m LoginPage:login_page.py:43 Click SignIn Link
+[32mINFO    [0m LoginPage:login_page.py:78 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:110 Just completed the blankLogin method
+[32mINFO    [0m LoginPage:login_page.py:147 TEST PASS: Verified signin header is still present for blank login.
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can&#x27;t Login with Blank Fields
 [32mINFO    [0m TestStatus:teststatus.py:67 test_invalidLoginBlank ### TEST SUCCESSFUL
 [32mINFO    [0m LoginTests:login_test.py:35 ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginBlank++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -292,7 +292,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_invalidLoginWrongPassword</td>
-          <td class="col-duration">1.32</td>
+          <td class="col-duration">1.86</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -301,13 +301,13 @@ function filter_table(elem) {
 [32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
 [32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
 [32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_invalidLoginWrongPassword&quot;&gt;
-[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
-[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
-[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
-[32mINFO    [0m LoginPage:login_page.py:95 Just completed the wrongLogin method
-[32mINFO    [0m LoginPage:login_page.py:98 browser: chrome
-[32mINFO    [0m LoginPage:login_page.py:105 Error text found on page is: This combination of email or password is invalid.
-[32mINFO    [0m LoginPage:login_page.py:107 TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn&#x27;t match.
+[32mINFO    [0m LoginPage:login_page.py:55 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:67 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:78 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:116 Just completed the wrongLogin method
+[32mINFO    [0m LoginPage:login_page.py:119 browser: chrome
+[32mINFO    [0m LoginPage:login_page.py:130 Error text found on page is: This combination of email or password is invalid.
+[32mINFO    [0m LoginPage:login_page.py:132 TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn&#x27;t match.
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can&#x27;t Login with Wrong Password
 [32mINFO    [0m TestStatus:teststatus.py:67 test_validLoginWrongPassword ### TEST SUCCESSFUL
 [32mINFO    [0m LoginTests:login_test.py:50 ++++++++++++++++++++++++++++++++++++ENDING test_validLoginWrongPassword++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -315,7 +315,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_invalidLoginWrongEmail</td>
-          <td class="col-duration">1.57</td>
+          <td class="col-duration">1.80</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -324,13 +324,13 @@ function filter_table(elem) {
 [32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
 [32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
 [32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_invalidLoginWrongEmail&quot;&gt;
-[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
-[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
-[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
-[32mINFO    [0m LoginPage:login_page.py:95 Just completed the wrongLogin method
-[32mINFO    [0m LoginPage:login_page.py:98 browser: chrome
-[32mINFO    [0m LoginPage:login_page.py:105 Error text found on page is: This combination of email or password is invalid.
-[32mINFO    [0m LoginPage:login_page.py:107 TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn&#x27;t match.
+[32mINFO    [0m LoginPage:login_page.py:55 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:67 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:78 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:116 Just completed the wrongLogin method
+[32mINFO    [0m LoginPage:login_page.py:119 browser: chrome
+[32mINFO    [0m LoginPage:login_page.py:130 Error text found on page is: This combination of email or password is invalid.
+[32mINFO    [0m LoginPage:login_page.py:132 TEST PASS: Verified error for wrong login. Oops, the e-mail or password doesn&#x27;t match.
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can&#x27;t Login with Wrong Email
 [32mINFO    [0m TestStatus:teststatus.py:67 test_invalidLoginWrongEmail ### TEST SUCCESSFUL
 [32mINFO    [0m LoginTests:login_test.py:65 ++++++++++++++++++++++++++++++++++++ENDING test_invalidLoginWrongEmail++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -338,7 +338,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_validLogin</td>
-          <td class="col-duration">4.16</td>
+          <td class="col-duration">3.94</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -347,13 +347,13 @@ function filter_table(elem) {
 [32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
 [32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
 [32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_validLogin&quot;&gt;
-[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
-[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
-[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
-[32mINFO    [0m LoginPage:login_page.py:84 Just completed the login method
-[32mINFO    [0m LoginPage:login_page.py:130 Element was found. Now getting its text.
-[32mINFO    [0m LoginPage:login_page.py:132 Username is AUTOMATION TESTER
-[32mINFO    [0m LoginPage:login_page.py:133 ***VERIFIED SUCCESSFUL LOGIN.***
+[32mINFO    [0m LoginPage:login_page.py:55 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:67 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:78 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:105 Just completed the login method
+[32mINFO    [0m LoginPage:login_page.py:163 Element was found. Now getting its text.
+[32mINFO    [0m LoginPage:login_page.py:165 Username is AUTOMATION TESTER
+[32mINFO    [0m LoginPage:login_page.py:166 ***VERIFIED SUCCESSFUL LOGIN.***
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can Login Successfully
 [32mINFO    [0m TestStatus:teststatus.py:67 test_validLogin ### TEST SUCCESSFUL
 [32mINFO    [0m LoginTests:login_test.py:80 ++++++++++++++++++++++++++++++++++++ENDING test_validLogin++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -361,13 +361,13 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::LoginTests::test_validLogout</td>
-          <td class="col-duration">4.14</td>
+          <td class="col-duration">4.31</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m LoginTests:login_test.py:84 ++++++++++++++++++++++++++++++++++++STARTING test_validLogout++++++++++++++++++++++++++++++++++++
-[32mINFO    [0m LoginPage:login_page.py:149 Just completed the logout method
-[32mINFO    [0m LoginPage:login_page.py:157 ***SUCCESSFULLY LOGGED OUT.***
+[32mINFO    [0m LoginPage:login_page.py:186 Just completed the logout method
+[32mINFO    [0m LoginPage:login_page.py:198 ***SUCCESSFULLY LOGGED OUT.***
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify Can Logout Successfully
 [32mINFO    [0m TestStatus:teststatus.py:67 test_validLogout ### TEST SUCCESSFUL
 [32mINFO    [0m LoginTests:login_test.py:88 ++++++++++++++++++++++++++++++++++++ENDING test_validLogout++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -375,7 +375,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::FilterResultsBySqFeetTests::test_filterResultsBySqFeet</td>
-          <td class="col-duration">11.34</td>
+          <td class="col-duration">11.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -384,7 +384,7 @@ function filter_table(elem) {
 [32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
 [32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
 [32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_filterResultsBySqFeet&quot;&gt;
-[32mINFO    [0m SearchPage:search_page.py:27 Enter search keyword
+[32mINFO    [0m SearchPage:search_page.py:33 Enter search keyword
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify can filter by sq feet.
 [32mINFO    [0m TestStatus:teststatus.py:67 test_filterResultsBySqFeet ### TEST SUCCESSFUL
 [32mINFO    [0m FilterResultsBySqFeetTests:filterResultsBySqFeet_test.py:45 ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -392,7 +392,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::FilterResultsByYearTests::test_filterResultsByYear</td>
-          <td class="col-duration">18.54</td>
+          <td class="col-duration">15.73</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -401,7 +401,7 @@ function filter_table(elem) {
 [32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
 [32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
 [32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
-[32mINFO    [0m SearchPage:search_page.py:27 Enter search keyword
+[32mINFO    [0m SearchPage:search_page.py:33 Enter search keyword
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify can filter by sq feet.
 [32mINFO    [0m TestStatus:teststatus.py:67 test_filterResultsBySqFeet ### TEST SUCCESSFUL
 [32mINFO    [0m FilterResultsByYearTests:filterResultsByYear_test.py:48 ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody>
@@ -409,7 +409,7 @@ function filter_table(elem) {
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_suite_web_sanity.py::SearchTests::test_loginSearch</td>
-          <td class="col-duration">16.70</td>
+          <td class="col-duration">15.40</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -418,12 +418,12 @@ function filter_table(elem) {
 [32mINFO    [0m ExcelUtils:excel_utils.py:18 &lt;Worksheet &quot;test_filterResultsByYear&quot;&gt;
 [32mINFO    [0m ExcelUtils:excel_utils.py:21 Got active sheet.
 [32mINFO    [0m ExcelUtils:excel_utils.py:22 &lt;Worksheet &quot;test_loginSearch&quot;&gt;
-[32mINFO    [0m LoginPage:login_page.py:38 Click SignIn Link
-[32mINFO    [0m LoginPage:login_page.py:46 Enter Email
-[32mINFO    [0m LoginPage:login_page.py:54 Enter Password
-[32mINFO    [0m LoginPage:login_page.py:61 Click Login Button
-[32mINFO    [0m LoginPage:login_page.py:84 Just completed the login method
-[32mINFO    [0m SearchPage:search_page.py:27 Enter search keyword
+[32mINFO    [0m LoginPage:login_page.py:43 Click SignIn Link
+[32mINFO    [0m LoginPage:login_page.py:55 Enter Email
+[32mINFO    [0m LoginPage:login_page.py:67 Enter Password
+[32mINFO    [0m LoginPage:login_page.py:78 Click Login Button
+[32mINFO    [0m LoginPage:login_page.py:105 Just completed the login method
+[32mINFO    [0m SearchPage:search_page.py:33 Enter search keyword
 [32mINFO    [0m TestStatus:teststatus.py:30 ### VERIFICATION SUCCESSFUL :: + Verify can search after login.
 [32mINFO    [0m TestStatus:teststatus.py:67 test_loginSearch ### TEST SUCCESSFUL
 [32mINFO    [0m SearchTests:search_test.py:44 ++++++++++++++++++++++++++++++++++++ENDING test_loginSearch++++++++++++++++++++++++++++++++++++<br/></div></td></tr></tbody></table></body></html>

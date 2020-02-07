@@ -1,3 +1,5 @@
+from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException
+
 import utilities.custom_logger as cl
 import logging
 import time
@@ -19,14 +21,22 @@ class ResultsPage(BasePage):
 
 
     def click1stimage(self):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_all_elements_located(ResultsPage._images))
         images = self.driver.find_elements(*ResultsPage._images)
         image1 = images[0]
         image1.click()
 
     def verifySqFt(self, minsqft, maxsqft):
-        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5)
+        wait = WebDriverWait(self.driver, timeout=30, poll_frequency=.5,
+                             ignored_exceptions=[NoSuchElementException,
+                                                 ElementNotVisibleException,
+                                                 ElementNotSelectableException]
+                             )
         wait.until(EC.presence_of_all_elements_located(ResultsPage._sqftresults))
         sqftresults = self.driver.find_elements(*ResultsPage._sqftresults)
         sqftresult1  = int(sqftresults[0].text.replace(",", ""))
